@@ -1,0 +1,60 @@
+#page-container {
+	width: 80%;
+	margin: auto;
+}
+
+#footer {
+	margin:10px;
+	font-style: italic;
+}
+
+#header {
+	width: 78%;
+	margin: auto;
+	border-radius:25px;
+	border-style: solid;
+    color: navy;
+    text-align:center;
+    font-size: 250%;
+    background-image: url(http://i304.photobucket.com/albums/nn178/sevilmarandi/cameronhighlands_zpsqus8wkev.jpg);
+    background-size: cover;
+	height: 350px;
+}
+
+h2 {
+	color: seashell;
+	margin-left: 30px;
+	font-size: 200%;
+}
+
+h3 {
+	padding-top: 20px;
+	padding-left: 10px;
+	font-size: 180%;
+	margin: 10px;
+}
+
+.work-session {
+	border-style:solid;
+	background-color:royalblue;
+	margin:10px;
+	border-radius: 25px;
+}
+.concept {
+    padding-left: 20px;
+    background-color: white;
+    margin:25px;
+    border-radius: 25px;
+}
+
+.detail {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 120%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

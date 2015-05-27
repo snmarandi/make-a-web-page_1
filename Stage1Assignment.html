@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSS_Stage1Assignment.css">
+<title>Basics of the Web &amp; HTML</title>
+</head>
+<body>
+	<div id="header">
+		<h1>Basics of the Web &amp; HTML</h1>
+	</div>
+	<div id="page-container">
+		<div class="work-session">
+			<h2>Part I: Documents of the Web</h2>
+			<div class="concept">
+				<h3>Types of Documents</h3>
+				<div class="detail">
+					<p>Different types of files can be found on the web, including:</p>
+					<ul>
+						<li>Images</li>
+						<li>Videos</li>
+						<li>Music</li>
+						<li>Plain Text</li>
+						<li>HTML (Hypertext Markup Language)</li>
+					</ul>
+					<p>Of these different file types, <b>HTML</b> is the most prominent document on the web.</p>
+					<p>HTML documents, such as this one, are hosted on servers. In order to retrieve such documents, the internet uses HTTP to communicate with the user, the user's browser, and the server (see Figure 1).</p>
+					<div>
+						<em>Figure 1: Major Concepts of the Web</em>
+						<img src="http://i304.photobucket.com/albums/nn178/sevilmarandi/MajorConcepts_zpscnhtdsik.png" alt="Diagram">
+					</div>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>The Key Components of HTML</h3>	
+				<div class="detail">
+					<p>HTML is made up of <b>text content</b> (what one sees), <b>markup</b> (what it looks like), <b>references</b> to other documents (e.g., videos), and <b>links</b> to other pages (ex., see <a href="http://www.wikipedia.org"> Wikipedia</a>).</p>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>HTML Markups</h3>
+				<div class="detail">
+					<p>HTML markups take the general format of &lt;name&gt;content&lt;/name&gt;, called an element.</p>
+					<p>An element consists of an opening tag &lt;name&gt; and a closing tag &lt;/name&gt;.</p>
+					<p>Below are some examples of tags:</p>
+					<ul>
+						<li>&lt;b&gt;content&lt;/b&gt;: used to add emphasis by bolding text</li>
+						<li>&lt;em&gt;content&lt;/em&gt;: used to add emphasis by italicizing text</li>
+						<li>&lt;a href="URL"&gt;content&lt;/a&gt;: anchor used to link documents (a tag can have multiple attributes)</li>
+						<li>&lt;img src="URL" alt="text"&gt;: use to add images like the one above</li>
+						<li>&lt;p&gt;content&lt;/p&gt;: used to mark paragraphs (not a void tag)</li>
+						<li>&lt;br&gt;: used to add breaks / white space (a void tag)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>Inline versus Block Elements</h3>
+				<div class="detail">
+					<p>Block elements start (and end) with a new line, when displayed in a browser. Imagine a dotted lines around the text to delineate the line break.</p>
+					<p>Inline elements, on the other hand, are usually displayed without line breaks.</p>
+					<div>
+						<em>Block Element Examples</em>
+						<ul>
+							<li>&lt;br&gt;</li>
+							<li>&lt;span&gt;</li>
+							<li>&lt;a&gt;</li>
+							<li>&lt;img&gt;</li>
+							<li>&lt;strong&gt;</li>
+						</ul>
+					</div>
+					<div>
+						<em>Inline Element Examples</em>
+						<ul>
+							<li>&lt;form&gt;</li>
+							<li>&lt;p&gt;</li>
+							<li>&lt;div&gt;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="work-session">
+			<h2>Part II: Creating a Structured Web Document</h2> 
+			<div class="concept">
+				<h3>The Language Used to Create Structure</h3>
+				<div class="detail">
+					<p>HTML provides the framework of a document and CSS and Javascript provide the needed style and interactivity to a web page.</p>
+					<p>In this course, the focus will be on <b>HTML</b> and <b>CSS</b> languages with the former used to control the "structure" of the web page and the latter the "style" of the page. The structure of HTML language, which consists of both syntax and rules, is <b>tree-like</b> and the <b>DOM (Document Object Model)</b> references this tree-like structure. HTML, as previously mentioned, consists of tags, which the browser uses to form the elements, and the nesting of elements within elements (a common feature of HTML; seen in the indentation of the text) gives way to the tree-like structure / DOM.</p>
+					<p>Structure can be given to the HTML language by the grouping of concepts using container elements &lt;span&gt; and &lt;div&gt;.</p>
+					<p>CSS is a stylesheet language used to describe the presentation or ordering of a document written in HTML. Importantly, CSS helps to mitigate repetition in code through its 'cascading' property.</p>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>An Overview of CSS: Cascading Style Sheets</h3>
+				<div class="detail">
+					<p>The cascading property of CSS is an inheritence feature that relies on the ancestor-descendent relationship to operate. It is a means by which repetition in code is avoided. A helpful analogy is the application of national laws to states, municipalities and neighbourhoods (and, in turn, the application of state laws to municipalities and neighbourhoods, and so on). Through this mechanism the structure rules are applied not only to a specific element, by also to its descendents. As such, the property relies on a document tree or DOM of HTML.</p>
+					<p>Note: Generally, descendent elements inherit text related, but not box related properties.</p>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>CSS Selectors</h3>
+				<div class="detail">
+					<p>Style can be applies to specific HTML elements through the use of the following selectors (for full list of selectors see <a> href=https://css-tricks.com/how-css-selectors-work/>Treehouse&trade;: Beginner Concepts: How CSS Selectors Work)</a>):</p>
+					<ul>
+						<li>ID Selectors: e.g., #abcdefg (most specific)</li>
+						<li>Class Selectors: e.g., .abcdefg (useful &amp; versatile)</li>
+						<li>Tag Selectors: e.g., h2 (html specific)</li>
+						<li>Attribute Selectors and others (Positional Selectors etc.)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>The Box Model</h3>
+				<div class="detail">
+					<p>There are four key points to keep in mind about HTML and boxes:</p>
+					<ul>
+						<li>HTML elements are boxes and each box has four components:margins, border, padding, and content</li>
+						<li>Because there are so many components to each box it can often be hard to get the size of the box just right</li>
+						<li>Two techniques help with the sizing issue: setting size in terms of percentages (as opposed to pixels), and setting box-sizing attribute to border-box for every element</li>
+						<li>Different browers work differently and can show CSS/HTML code differently</li>
+					</ul>
+				</div>
+			</div>
+			<div class="concept">
+				<h3>HTML & CSS Errors</h3>
+				<div class="detail">
+					<P>Errors in HTML and CSS code are an inevitable part of content and web development. The process of web development is indeed an iterative one: code, test (debug), refine, and repeat. Common errors in HTML and CSS code include Syntax errors - e.g., missing semicolons, missing element end tags. </P>
+					<p>The errors can often be resolved by returning to the source code, but this may be a tedious process for larger documents. In such instances, the following W3C validation tools - <a href="http://validator.w3.org/"> W3C markup validation service</a> and the <a href="https://jigsaw.w3.org/css-validator/">W3C CSS validator</a> - are beneficial for quickly identifying, at line level, the errors and warnings in HTML and CSS code. The recommended practice is to always validate HTML and / or CSS code.</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p> Stage 1 Assignment, Udacity. &copy; Sevil Marandi</p>
+		</div>
+	</div>
+</body>
+</html>
